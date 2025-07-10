@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+/*Manual dark mode variant triggered by .dark class*/
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-light: #ffffff;
+  --color-dark: #0f172a;
+  --color-primary: #2563eb;
+
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+}
+
+:root {
+  --color-light: #ffffff;
+  --color-dark: #0f172a;
+  --color-primary: #2563eb;
+
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+}
+
+.dark {
+  --color-light: #0f172a;
+  --color-dark: #ffffff;
+  --color-primary: #2563eb;
+}
